@@ -2,6 +2,8 @@ package com.zyt.android50;
 
 import android.app.Application;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.io.Closeable;
 
 import io.realm.Realm;

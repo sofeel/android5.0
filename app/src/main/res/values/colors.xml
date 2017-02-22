@@ -3,4 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="background_radio">#9f9f9f</color>
+    <color name="text_checkbox">#000</color>
+
+    <color name="primaryBlue">#66ff00</color>
+    <color name="primaryDarkBlue">#11ff00</color>
+    <color name="primaryAccent">#f00</color>
+    <color name="controlNormalGreen">#fff</color>
 </resources>

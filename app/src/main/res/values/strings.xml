@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Android5.0</string>
+    <string name="item01">item01</string>
+    <string name="item02">item02</string>
 </resources>

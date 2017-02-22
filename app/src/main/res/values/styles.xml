@@ -8,4 +8,49 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--actionbar-->
+        <item name="colorPrimary">@color/primaryBlue</item>
+        <!--状态栏-->
+        <item name="colorPrimaryDark">@color/primaryDarkBlue</item>
+        <item name="colorAccent">@color/primaryAccent</item>
+        <item name="colorControlNormal">@color/controlNormalGreen</item>
+        <item name="colorControlActivated">@color/primaryAccent</item>
+    </style>
+
+    <style name="AppToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--actionbar-->
+        <item name="colorPrimary">@color/primaryBlue</item>
+        <!--状态栏-->
+        <item name="colorPrimaryDark">@color/primaryDarkBlue</item>
+        <item name="colorAccent">@color/primaryAccent</item>
+        <item name="colorControlNormal">@color/controlNormalGreen</item>
+        <item name="colorControlActivated">@color/primaryAccent</item>
+    </style>
+
+    <style name="FormRadioButton" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:minHeight">@dimen/buttonHeight</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@color/background_radio</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="FormCheckbox" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:minHeight">@dimen/buttonHeight</item>
+        <item name="android:minWidth">@dimen/checkboxWidth</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/text_checkbox</item>
+    </style>
+
+    <style name="Button.Extended" parent="Base.TextAppearance.AppCompat.Widget.Button">
+        <item name="android:minWidth">@dimen/checkboxWidth</item>
+        <item name="android:minHeight">@dimen/buttonHeight</item>
+        <item name="android:background">@color/background_radio</item>
+        <item name="android:textColor">@color/text_checkbox</item>
+    </style>
+
+
 </resources>

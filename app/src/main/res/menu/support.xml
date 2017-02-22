@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+        android:id="@+id/action_send"
+        android:title="@string/item01"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/tails"
+        android:title="@string/item02"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_03"
+        android:icon="@mipmap/ic_launcher"
+        android:title="item03"
+        app:showAsAction="never" />
+
+
+</menu>
