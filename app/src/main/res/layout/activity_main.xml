@@ -9,7 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.zyt.android50.MainActivity">
+    tools:context="com.zyt.android50.MainActivity"
+    >
 
     <Button
         android:id="@+id/toggleButton"
@@ -31,6 +32,30 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:text="1.6多布局"/>
+    <Button
+        android:id="@+id/emptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="1.7自定义AdapterView空布局"/>
+    <Button
+        android:id="@+id/selctionHerder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="1.8制作listview节头部"/>
+    <com.zyt.android50.customwidgets.ui.TextImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="1.8制作listview节头部"
+        />
+    <Button
+        android:id="@+id/fragmentAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Fragment动画"/>
 
     <View
         android:id="@+id/theView"

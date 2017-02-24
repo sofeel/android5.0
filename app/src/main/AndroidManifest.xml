@@ -7,27 +7,26 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="sensorPortrait"
-            android:theme="@style/AppToolbarTheme">
+            android:screenOrientation="sensorPortrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".customwidgets.ui.FlipperActivity" />
+        <activity android:name=".customwidgets.ui.Activity1_5" />
         <activity
-            android:name=".customwidgets.ui.FlipperActivity"
-            android:theme="@style/AppToolbarTheme" />
-        <activity
-            android:name=".customwidgets.ui.Activity1_5"
-            android:theme="@style/AppToolbarTheme" />
- <activity
             android:name=".customwidgets.ui.Activity1_6"
-            android:theme="@style/AppToolbarTheme" />
+            android:screenOrientation="landscape" />
+        <activity android:name=".customwidgets.ui.Activity1_7" />
+        <activity android:name=".customwidgets.ui.Activity1_8" />
+        <activity android:name=".customwidgets.ui.Activity1_9" />
 
     </application>
 

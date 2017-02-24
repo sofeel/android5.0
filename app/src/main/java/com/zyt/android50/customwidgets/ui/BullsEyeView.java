@@ -1,4 +1,4 @@
-package com.zyt.android50.customwidgets;
+package com.zyt.android50.customwidgets.ui;
 
 import android.content.Context;
 import android.graphics.Canvas;

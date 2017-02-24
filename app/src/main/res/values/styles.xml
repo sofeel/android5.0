@@ -2,10 +2,26 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowAnimationStyle">@style/TransitionAnimation</item>
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TransitionAnimation" parent="@android:style/Animation.Activity">
+        <!--activity-->
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+        <!--本地fragment-->
+        <item name="android:fragmentOpenEnterAnimation">@animator/fragment_enter</item>
+        <item name="android:fragmentOpenExitAnimation">@animator/fragment_exit</item>
+        <item name="android:fragmentCloseEnterAnimation">@animator/pop_enter</item>
+        <item name="android:fragmentCloseExitAnimation">@animator/pop_exit</item>
+        <item name="android:fragmentFadeEnterAnimation">@animator/fade_in</item>
+        <item name="android:fragmentFadeExitAnimation">@animator/fade_out</item>
     </style>
 
     <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">

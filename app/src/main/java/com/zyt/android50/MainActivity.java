@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,6 +14,9 @@ import android.widget.Toast;
 
 import com.zyt.android50.customwidgets.ui.Activity1_5;
 import com.zyt.android50.customwidgets.ui.Activity1_6;
+import com.zyt.android50.customwidgets.ui.Activity1_7;
+import com.zyt.android50.customwidgets.ui.Activity1_8;
+import com.zyt.android50.customwidgets.ui.Activity1_9;
 import com.zyt.android50.customwidgets.ui.FlipperActivity;
 import com.zyt.android50.customwidgets.ui.MessageEvent;
 
@@ -33,6 +37,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewToAnimate = findViewById(R.id.theView);
         findViewById(R.id.layoutTransition).setOnClickListener(this);
         findViewById(R.id.multiLayout).setOnClickListener(this);
+        findViewById(R.id.emptyLayout).setOnClickListener(this);
+        findViewById(R.id.selctionHerder).setOnClickListener(this);
+        findViewById(R.id.fragmentAnimation).setOnClickListener(this);
+
 //        ActionBar actionBar = getSupportActionBar();
 //        actionBar.setDisplayHomeAsUpEnabled(true);
 //        actionBar.setTitle("主题");
@@ -125,6 +133,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.multiLayout:
                 startActivity(new Intent(MainActivity.this, Activity1_6.class));
+                break;
+            case R.id.emptyLayout:
+                startActivity(new Intent(MainActivity.this, Activity1_7.class));
+                break;
+            case R.id.selctionHerder://自定义过度动画
+                startActivity(new Intent(MainActivity.this, Activity1_8.class));
+//                overridePendingTransition(R.anim.open_enter,R.anim.open_exit);
+//                finish();
+//                overridePendingTransition(R.anim.close_enter,R.anim.close_exit);
+                break;
+            case R.id.fragmentAnimation:
+                startActivity(new Intent(MainActivity.this, Activity1_9.class));
                 break;
             default:
                 break;

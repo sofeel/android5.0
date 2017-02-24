@@ -20,7 +20,6 @@ public class MyApplication extends Application {
         super.onCreate();
         //初始化Realm
         Realm.init(getApplicationContext());
-        //默认配置
         RealmConfiguration config = new RealmConfiguration.Builder().build();
         Realm.setDefaultConfiguration(config);
     }
